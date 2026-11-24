@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0L10 5L0 10z" fill="#D8A7B1"/>
+      <path d="M0 0L10 5L0 10z" fill="#8C1C3A"/>
     </marker>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B0B0C"/><stop offset="1" stop-color="#1E0B12"/>
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FBF6F7"/>
     </linearGradient>
     <style>
-      .b{fill:#151012;stroke:#8C1C3A;stroke-width:1.6}
-      .k{fill:#5E1224;stroke:#D8A7B1;stroke-width:1.6}
-      .w{fill:none;stroke:#D8A7B1;stroke-width:1.4}
-      .s{fill:#151012;stroke:#D8A7B1;stroke-width:1.4}
-      .t{font-family:Helvetica,Arial,sans-serif;font-size:13px;fill:#FAF7F5;text-anchor:middle}
-      .m{font-family:Menlo,Consolas,monospace;font-size:11px;fill:#D8A7B1;text-anchor:middle}
-      .l{font-family:Georgia,serif;font-style:italic;font-size:13px;fill:#D8A7B1}
-      .h{font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:2px;fill:#FAF7F5;fill-opacity:.55}
-      .tag{fill:#0B0B0C;stroke:#8C1C3A;stroke-width:1.2}
+      .b{fill:#FFFFFF;stroke:#8C1C3A;stroke-width:1.6}
+      .k{fill:#F3E3E7;stroke:#8C1C3A;stroke-width:1.6}
+      .w{fill:none;stroke:#8C1C3A;stroke-width:1.4}
+      .s{fill:#FFFFFF;stroke:#8C1C3A;stroke-width:1.4}
+      .t{font-family:Helvetica,Arial,sans-serif;font-size:13px;fill:#1A1A1D;text-anchor:middle}
+      .m{font-family:Menlo,Consolas,monospace;font-size:11px;fill:#8C1C3A;text-anchor:middle}
+      .l{font-family:Georgia,serif;font-style:italic;font-size:13px;fill:#8C1C3A}
+      .h{font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:2px;fill:#1A1A1D;fill-opacity:.55}
+      .tag{fill:#FFFFFF;stroke:#8C1C3A;stroke-width:1.2}
     </style>
   </defs>
-  <rect width="1200" height="400" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="400" rx="16" fill="url(#bg)" stroke="#EAD0D6" stroke-width="2"/>
   <text x="30" y="34" class="h">CASCADE SPEED / CURRENT LOOPS  ·  PARALLEL EXCITATION LOOP</text>
 
   <!-- ===== speed + armature cascade (row y=110) ===== -->
@@ -83,10 +83,10 @@
   <!-- ===== plant ===== -->
   <rect class="k" x="886" y="64" width="150" height="272" rx="12"/>
   <text class="t" x="961" y="168" style="font-size:15px">DC machine</text>
-  <text class="m" x="961" y="190" style="fill:#F3DCE1">1/(R_a+sL_a)</text>
-  <text class="m" x="961" y="206" style="fill:#F3DCE1">1/(R_e+sL_e)</text>
-  <text class="m" x="961" y="222" style="fill:#F3DCE1">K/(J_eq·s+β)</text>
-  <text class="m" x="961" y="250" style="fill:#F3DCE1">J_eq = 90.6 kg·m²</text>
+  <text class="m" x="961" y="190" style="fill:#5E1224">1/(R_a+sL_a)</text>
+  <text class="m" x="961" y="206" style="fill:#5E1224">1/(R_e+sL_e)</text>
+  <text class="m" x="961" y="222" style="fill:#5E1224">K/(J_eq·s+β)</text>
+  <text class="m" x="961" y="250" style="fill:#5E1224">J_eq = 90.6 kg·m²</text>
   <path class="w" d="M1036 200 H1066" marker-end="url(#a)"/><text class="l" x="1042" y="192">Ω</text>
   <rect class="b" x="1068" y="176" width="104" height="48" rx="8"/>
   <text class="t" x="1120" y="198">ρ·d/2 → ∫</text><text class="m" x="1120" y="214">v, x → LUT</text>
