@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0C"/>
+      <stop offset="0.62" stop-color="#1A0A0F"/>
+      <stop offset="1" stop-color="#5E1224"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#D8A7B1" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#F3DCE1"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
+  <!-- speed profile along the 10 km track: vr/2, vr, vr, vmax, vr, vr, vr/2, 0 -->
+  <g transform="translate(640,70)">
+    <path d="M0 190 V150 H50 V110 H150 H200 V30 H300 V110 H400 H450 V150 H500 V190"
+          fill="none" stroke="url(#line)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M0 190 V150 H50 V110 H150 H200 V30 H300 V110 H400 H450 V150 H500 V190 Z"
+          fill="#8C1C3A" fill-opacity="0.18"/>
+    <!-- slope sections -->
+    <path d="M150 196 L200 186" stroke="#D8A7B1" stroke-width="2"/>
+    <path d="M400 186 L450 196" stroke="#D8A7B1" stroke-width="2"/>
+    <line x1="0" y1="196" x2="500" y2="196" stroke="#FFFFFF" stroke-opacity="0.25"/>
+    <g font-family="Menlo, Consolas, monospace" font-size="11" fill="#D8A7B1" fill-opacity="0.85">
+      <text x="160" y="214">+5%</text><text x="410" y="214">−5%</text>
+      <text x="208" y="22">v_max · 42 km/h</text>
+      <text x="0" y="214">0 km</text><text x="470" y="214">10 km</text>
+    </g>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#FAF7F5">
+    <text x="60" y="122" font-size="54" letter-spacing="1">DC Motor Drive</text>
+    <text x="62" y="162" font-size="22" font-style="italic" fill="#D8A7B1">speed control of the “Carelli 1928” tramway</text>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FAF7F5" fill-opacity="0.75" letter-spacing="1.4">
+    <text x="62" y="222">CASCADE PI · FIELD WEAKENING · ANTI-WINDUP · GRAVITY FEED-FORWARD</text>
+  </g>
+  <rect x="62" y="244" width="64" height="3" fill="#8C1C3A"/>
+  <text x="62" y="276" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FAF7F5" fill-opacity="0.5" letter-spacing="1.5">MATLAB · SIMULINK · POLITECNICO DI MILANO</text>
+</svg>
