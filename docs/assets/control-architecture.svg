@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#D8A7B1"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0C"/><stop offset="1" stop-color="#1E0B12"/>
+    </linearGradient>
+    <style>
+      .b{fill:#151012;stroke:#8C1C3A;stroke-width:1.6}
+      .k{fill:#5E1224;stroke:#D8A7B1;stroke-width:1.6}
+      .w{fill:none;stroke:#D8A7B1;stroke-width:1.4}
+      .s{fill:#151012;stroke:#D8A7B1;stroke-width:1.4}
+      .t{font-family:Helvetica,Arial,sans-serif;font-size:13px;fill:#FAF7F5;text-anchor:middle}
+      .m{font-family:Menlo,Consolas,monospace;font-size:11px;fill:#D8A7B1;text-anchor:middle}
+      .l{font-family:Georgia,serif;font-style:italic;font-size:13px;fill:#D8A7B1}
+      .h{font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:2px;fill:#FAF7F5;fill-opacity:.55}
+      .tag{fill:#0B0B0C;stroke:#8C1C3A;stroke-width:1.2}
+    </style>
+  </defs>
+  <rect width="1200" height="400" rx="16" fill="url(#bg)"/>
+  <text x="30" y="34" class="h">CASCADE SPEED / CURRENT LOOPS  ·  PARALLEL EXCITATION LOOP</text>
+
+  <!-- ===== speed + armature cascade (row y=110) ===== -->
+  <rect class="b" x="30" y="80" width="104" height="60" rx="8"/>
+  <text class="t" x="82" y="106">Track LUT</text><text class="m" x="82" y="124">x → v, slope</text>
+  <path class="w" d="M134 100 H166" marker-end="url(#a)"/><text class="l" x="136" y="92">ω_ref</text>
+
+  <circle class="s" cx="180" cy="100" r="13"/><text class="t" x="180" y="105">Σ</text>
+  <rect class="tag" x="160" y="150" width="40" height="20" rx="10"/><text class="m" x="180" y="164">Ω</text>
+  <path class="w" d="M180 150 V115" marker-end="url(#a)"/><text class="m" x="190" y="135">−</text>
+
+  <path class="w" d="M193 100 H216" marker-end="url(#a)"/>
+  <rect class="b" x="218" y="72" width="112" height="56" rx="8"/>
+  <text class="t" x="274" y="96">Speed PI</text><text class="m" x="274" y="114">lim ∝ I_e,ref</text>
+  <path class="w" d="M330 100 H357" marker-end="url(#a)"/><text class="l" x="334" y="92">T*</text>
+
+  <circle class="s" cx="370" cy="100" r="13"/><text class="t" x="370" y="105">+</text>
+  <rect class="b" x="300" y="176" width="140" height="52" rx="8"/>
+  <text class="t" x="370" y="198">Gravity feed-fwd</text><text class="m" x="370" y="216">mgRρ·sin(atan s)</text>
+  <path class="w" d="M370 176 V115" marker-end="url(#a)"/>
+  <path class="w" d="M82 140 V202 H298" marker-end="url(#a)"/><text class="l" x="92" y="196">slope</text>
+
+  <path class="w" d="M383 100 H404" marker-end="url(#a)"/>
+  <rect class="b" x="406" y="76" width="92" height="48" rx="8"/>
+  <text class="t" x="452" y="98">÷ K·I_e,ref</text><text class="m" x="452" y="114">T → i_a</text>
+  <path class="w" d="M498 100 H516" marker-end="url(#a)"/>
+  <rect class="b" x="518" y="76" width="92" height="48" rx="8"/>
+  <text class="t" x="564" y="98">Sat + rate</text><text class="m" x="564" y="114">±156 A</text>
+  <path class="w" d="M610 100 H632" marker-end="url(#a)"/><text class="l" x="606" y="82">i_a*</text>
+
+  <circle class="s" cx="645" cy="100" r="13"/><text class="t" x="645" y="105">Σ</text>
+  <rect class="tag" x="625" y="150" width="40" height="20" rx="10"/><text class="m" x="645" y="164">i_a</text>
+  <path class="w" d="M645 150 V115" marker-end="url(#a)"/><text class="m" x="655" y="135">−</text>
+
+  <path class="w" d="M658 100 H678" marker-end="url(#a)"/>
+  <rect class="b" x="680" y="72" width="112" height="56" rx="8"/>
+  <text class="t" x="736" y="96">Current PI</text><text class="m" x="736" y="114">sat: V_DC − E</text>
+  <path class="w" d="M792 100 H815" marker-end="url(#a)"/>
+  <circle class="s" cx="828" cy="100" r="13"/><text class="t" x="828" y="105">+</text>
+  <rect class="tag" x="808" y="150" width="40" height="20" rx="10"/><text class="m" x="828" y="164">E</text>
+  <path class="w" d="M828 150 V115" marker-end="url(#a)"/>
+  <path class="w" d="M841 100 H884" marker-end="url(#a)"/><text class="l" x="852" y="92">v_a</text>
+
+  <!-- ===== excitation loop (row y=300) ===== -->
+  <rect class="tag" x="300" y="290" width="40" height="20" rx="10"/><text class="m" x="320" y="304">Ω</text>
+  <path class="w" d="M340 300 H384" marker-end="url(#a)"/>
+  <rect class="b" x="386" y="266" width="224" height="68" rx="8"/>
+  <text class="t" x="498" y="290">Field weakening</text>
+  <text class="m" x="498" y="308">Ω ≤ Ω_b : I_e,n = 5 A</text>
+  <text class="m" x="498" y="323">Ω &gt; Ω_b : E_n / (K·Ω)</text>
+  <path class="w" d="M610 300 H632" marker-end="url(#a)"/><text class="l" x="600" y="282">i_e*</text>
+  <circle class="s" cx="645" cy="300" r="13"/><text class="t" x="645" y="305">Σ</text>
+  <rect class="tag" x="625" y="348" width="40" height="20" rx="10"/><text class="m" x="645" y="362">i_e</text>
+  <path class="w" d="M645 348 V315" marker-end="url(#a)"/><text class="m" x="655" y="335">−</text>
+  <path class="w" d="M658 300 H678" marker-end="url(#a)"/>
+  <rect class="b" x="680" y="272" width="112" height="56" rx="8"/>
+  <text class="t" x="736" y="296">Excitation PI</text><text class="m" x="736" y="314">sat: 60 V</text>
+  <path class="w" d="M792 300 H884" marker-end="url(#a)"/><text class="l" x="852" y="292">v_e</text>
+  <path class="w" d="M498 266 V246 H452 V126" marker-end="url(#a)" stroke-dasharray="4 4"/>
+  <text class="l" x="506" y="258">I_e,ref</text>
+
+  <!-- ===== plant ===== -->
+  <rect class="k" x="886" y="64" width="150" height="272" rx="12"/>
+  <text class="t" x="961" y="168" style="font-size:15px">DC machine</text>
+  <text class="m" x="961" y="190" style="fill:#F3DCE1">1/(R_a+sL_a)</text>
+  <text class="m" x="961" y="206" style="fill:#F3DCE1">1/(R_e+sL_e)</text>
+  <text class="m" x="961" y="222" style="fill:#F3DCE1">K/(J_eq·s+β)</text>
+  <text class="m" x="961" y="250" style="fill:#F3DCE1">J_eq = 90.6 kg·m²</text>
+  <path class="w" d="M1036 200 H1066" marker-end="url(#a)"/><text class="l" x="1042" y="192">Ω</text>
+  <rect class="b" x="1068" y="176" width="104" height="48" rx="8"/>
+  <text class="t" x="1120" y="198">ρ·d/2 → ∫</text><text class="m" x="1120" y="214">v, x → LUT</text>
+</svg>
